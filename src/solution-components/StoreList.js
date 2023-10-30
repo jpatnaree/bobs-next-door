@@ -1,12 +1,10 @@
 import React from "react"
 import Store from "./Store"
 
-function StoreList({storeListData}) {
+function StoreList({stores}) {
 
-    const storeStores = storeListData.map((store) => {
-
-        return <Store key={store.id} store={store}/>
-        
+    const storesComponent = stores.map(store => {
+        return <Store key={store.id} store={store} />
     })
 
     return(
@@ -26,7 +24,7 @@ function StoreList({storeListData}) {
                         Episode
                     </th>
                 </tr>
-                {storeStores}
+                {storesComponent}
             </tbody>
         
         </table>

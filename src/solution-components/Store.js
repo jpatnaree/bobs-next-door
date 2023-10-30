@@ -10,7 +10,7 @@ function Store({store}) {
             <span>{name}</span>
         </td>
         <td>
-            <a href={image} target="_blank"><b>&#8599;</b></a>
+            <a href={image} target={name}><b>&#8599;</b></a>
         </td>
         <td>
             <span>{season}</span>
